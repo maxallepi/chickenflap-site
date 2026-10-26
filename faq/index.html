@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Chicken Flap</title>
+<meta name="google-site-verification" content="tGNfQzNEMOx3biaB5_MPiAJDEfW785p_juTnVxcIMeg" />
+<meta name="description" content="Frequently asked questions about Chicken Flap: leaderboards, Play Games profiles, achievements, checkpoints, and more.">
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 40px 20px 80px;
+    background: #14122b; color: #e8e4f5;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: 34px; margin: 0 0 8px; letter-spacing: -0.5px; }
+  .sub { color: #9c93af; font-size: 15px; margin-bottom: 28px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; color: #ffd24a; }
+  h3 { font-size: 16px; margin: 24px 0 6px; color: #c9c3e0; }
+  h4 { font-size: 15px; margin: 20px 0 4px; color: #9c93af; font-weight: 600; }
+  p, li { color: #d7d2e6; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  .card {
+    background: #1e1b3a; border: 1px solid #2e2a52; border-radius: 14px;
+    padding: 18px 20px; margin: 24px 0;
+  }
+  .card strong { color: #7ee0b0; }
+  a { color: #ffd24a; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 26px 0 0; }
+  .links a {
+    display: inline-block; padding: 12px 18px; border-radius: 10px;
+    background: #1e1b3a; border: 1px solid #2e2a52;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+  }
+  .links a:hover { border-color: #ffd24a; }
+  .toc { list-style: none; padding-left: 0; }
+  .toc li { margin: 8px 0; }
+  .toc a { text-decoration: none; color: #ffd24a; }
+  .toc a:hover { text-decoration: underline; }
+  footer { margin-top: 48px; color: #6f6885; font-size: 13px; border-top: 1px solid #2e2a52; padding-top: 18px; }
+  .steps { margin: 10px 0 0 20px; }
+  .steps li { margin: 6px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>FAQ</h1>
+  <div class="sub">Quick answers to common questions about Chicken Flap.</div>
+
+  <nav class="card">
+    <strong>Jump to a topic:</strong>
+    <ul class="toc">
+      <li><a href="#leaderboard">My score isn't on the leaderboard</a></li>
+      <li><a href="#achievements">Achievements not unlocking</a></li>
+      <li><a href="#checkpoints">Easy checkpoints lost on restart</a></li>
+      <li><a href="#privacy">Data & privacy</a></li>
+    </ul>
+  </nav>
+
+  <section id="leaderboard">
+    <h2>My score isn't on the leaderboard</h2>
+    <p>Chicken Flap uses Google Play Games Services for online leaderboards. Your score is always saved to your Google account when you play, but it only appears on the public leaderboard if your <strong>Play Games profile is set to Public</strong>. If your profile is Private, your scores stay saved — they just will not be shown to other players.</p>
+
+    <h3>How to make your Play Games profile Public</h3>
+
+    <h4>Via the Google Play app</h4>
+    <ol class="steps">
+      <li>Open the Google Play app and tap your profile icon (top right).</li>
+      <li>Select <strong>Settings > General > Play Games profile</strong>.</li>
+      <li>Tap <strong>Privacy & Settings</strong> and choose <strong>Public</strong>.</li>
+    </ol>
+
+    <h4>Via Android device settings</h4>
+    <ol class="steps">
+      <li>Open your device <strong>Settings</strong> app.</li>
+      <li>Tap your <strong>Google account</strong> (under <em>Google services and preferences</em>).</li>
+      <li>Select <strong>All Services > Play Games > Privacy & Settings</strong>.</li>
+      <li>Choose <strong>Public</strong>.</li>
+    </ol>
+
+    <p>That's it — your scores will appear on the leaderboard the next time you play. (Existing scores appear immediately once the profile is Public.)</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements not unlocking</h2>
+    <p>Achievements are synced with Google Play Games. If you just signed in, the game merges any achievements already on your account and then pushes any local ones. This happens automatically on sign-in and when you open the Achievements screen.</p>
+    <p>If an achievement still doesn't appear:</p>
+    <ul>
+      <li>Make sure you're signed in to Play Games (tap the <strong>Sign in</strong> chip on the Leaderboard screen).</li>
+      <li>Open the <strong>Achievements</strong> screen — it forces a merge with the server.</li>
+      <li>If it's an Easy or Impossible difficulty achievement, confirm you're actually playing that difficulty; the requirements are gated by difficulty.</li>
+    </ul>
+  </section>
+
+  <section id="checkpoints">
+    <h2>Easy checkpoints lost on restart</h2>
+    <p>Fixed in version <strong>1.1.33</strong>. Previously the checkpoint was written but not committed before the process could be killed. Now the game commits the checkpoint synchronously and shows a <strong>CONTINUE LVL X</strong> button on the Start screen beside <strong>NEW GAME</strong> whenever an Easy checkpoint exists.</p>
+  </section>
+
+  <section id="privacy">
+    <h2>Data & privacy</h2>
+    <p>Chicken Flap stores local best scores, coins, and checkpoint progress on your device. If you sign in to Play Games, your leaderboard scores and achievement progress are sent to Google Play Games Services. The app does not read your email, contacts, files, or any other Google data.</p>
+    <p>Full details are in the <a href="/privacy/">Privacy Policy</a> and <a href="/terms/">Terms of Service</a>.</p>
+  </section>
+
+  <div class="links">
+    <a href="/">← Back to Home</a>
+    <a href="/privacy/">Privacy Policy</a>
+    <a href="/terms/">Terms of Service</a>
+  </div>
+
+  <footer>
+    Chicken Flap is an independent game. This site is the official homepage referenced by the app's Google Play listing and Google OAuth consent screen.<br>
+    © 2026 Chicken Flap. All rights reserved.
+  </footer>
+</main>
+</body>
+</html>
